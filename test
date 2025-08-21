@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <style>
+        form{
+            max-width: 400px;
+            margin:auto;
+        }
+        h2 {
+        text-align: center; /* This line centers the title */
+    }
+        .form-row {
+            display: flex;
+            gap: 10px; /* space between inputs */
+            margin-bottom: 15px;
+        }
+        .form-group {
+          
+            flex: 1; /* makes inputs adjust equally */
+        }
+        label {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+
+    <!-- Form redirects to Google after submit -->
+    <form action="https://www.google.com" method="get">
+
+        <!-- First & Last Name in one row -->
+<div class="form-row">
+    <div class="form-group">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required style="width:150px;">
+    </div>
+
+    <div class="form-group">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required style="width:150px;">
+    </div>
+</div>
+
+
+
+        <!-- Age & Gender in one row -->
+        <div class="form-row">
+      <div class="form-group">
+        <label for="age">Age:</label>
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <input type="number" id="age" name="age" required>
+      </div>
+      <div class="form-group">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </div>
+    </div>
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+    <br>
+    <!-- Anchor Tag -->
+    <a href="https://www.google.com" target="_blank">Go to Google</a>
+</body>
+</html>
